@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous">
+
+  <title>Notes Keeper</title>
+</head>
+
+<body style="background-color:powderblue;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">NotesKeeper</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <style>
+        .nav-items {
+            margin-left: auto;
+        }
+    </style>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/dashboard">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/createnotes">CreateNotes</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-link active" href="/signout">SignOut</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- background image -->
+  <style type='text/css'>
+    table {
+      width: 95%;
+      background:rgb(0, 153, 255);
+      border: 10px solid #C5B798;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      margin-right: 10px;
+
+    }
+    </style>
+<style type='text/css'>
+ .p1 {
+   font-family:cursive, Helvetica, sans-serif;
+   font-style:italic;
+   font-size: 130%;
+   position: absolute;
+   right: 15%;
+   top: 250px;
+   width: 190px;
+   height: 300px;
+ }
+ </style>
+ <p class=p1  style="text-align:right" > Using NotesKeeper can helps you to read and write your notes from anywhere and anytime .Come Join Us!!</p>
+
+
+</style>
+  <div class="table-notes" style="--bs-bg-opacity: .5;" style="margin-top:10px">
+    <table class="table" align="right" style="width:30%" border="5" margin-top=10px>
+      <thead>
+        <tr>
+          <th scope="col">SNo</th>
+          <th scope="col">Notes</th>
+          <th scope="col">Date Created</th>
+          <th scope="col">Privacy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>MysecretNotes</td>
+          <td>12th March 2022</td>
+          <td>Yes</td>
+        <tr>
+            <th scope="row">2</th>
+            <td>MyPublicNotes</td>
+            <td>12th March 2022</td>
+            <td>No</td>
+      </tbody>
+    </table>
+  </div>
+  <div class="has-bg-img">
+    <img class="bg-img" src="static/notes4.jpg" alt="nOtes kEEping Made Easy!">
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

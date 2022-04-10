@@ -32,7 +32,7 @@ Reference : [OWASP TOP 10](https://owasp.org/www-project-api-security/)
 
 ## Future Work
 
-- Adding many functionalities in the Admin Panel
+- Adding more functionalities in the Admin Panel
 - Providing Defence mechanism (code change) for every vulnerability
 
 ## Creator
@@ -41,4 +41,5 @@ Reference : [OWASP TOP 10](https://owasp.org/www-project-api-security/)
 
 ## References
 
-The lab is highly inspired from [OWASP Kontra API Lab](!https://application.security/free/owasp-top-10-API) and [Insider Phd's Generic University lab](!https://github.com/InsiderPhD/Generic-University).
+- [OWASP Kontra API Lab](https://application.security/free/owasp-top-10-API) 
+- [InsiderPhd Generic University lab](https://github.com/InsiderPhD/Generic-University).

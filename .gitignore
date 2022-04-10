@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 README.md
+requirements.txt

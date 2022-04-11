@@ -193,7 +193,9 @@ def readnotes(user_id):
         datas=request.get_json(force=True)
         name,text=datas['notesname'],datas['notestext']
         data=notesdb(id=notesdb().id,notestext=text,notesname=name,note_id=user_id)
-        db.session.add(data)
+        #db.session.add(data)
+        data.notestext=text
+        data.notesname=name
         db.session.commit()
         return jsonify({'notesname':name,'notestext':text})
 
@@ -217,17 +219,13 @@ def create_notes():
 @app.route('/dashboard')
 def dashboard():
         if not g.user:
-            print("not login")
             return redirect('login')
         else:
-            print(g.user)
-            print("opening dashboard")
             return render_template('dashboard.html')
 
 @app.route('/createnotes')
 def makenotes():
     if not g.user:
-        print("not login")
         return redirect('logins')
     else:
          return render_template('createnotes.html')

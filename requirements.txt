@@ -1,0 +1,5 @@
+Flask==2.1.1
+Flask_SQLAlchemy==2.5.1
+requests==2.22.0
+SQLAlchemy==1.4.35
+urllib3==1.25.3

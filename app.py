@@ -53,7 +53,7 @@ class notesdb(db.Model):
 def before_requests():
     g.user=None
     if 'user_id' in session:
-        print(session['user_id'])
+        #print(session['user_id'])
         g.user=session['user_id']
 
 @app.route("/")
@@ -90,8 +90,8 @@ def create_Account():
         datas=request.get_json(force=True)
         db_datas=usersdb.query.all()            
         email,mob,password,country=datas['email'].strip(),datas['mobile'].strip(),datas['password'].strip(),datas['country'].strip()
-        print(mob)
-        print(type(mob))
+        #print(mob)
+        #print(type(mob))
         for data in db_datas:
             if data.email==email:
                 flag=0
@@ -99,7 +99,7 @@ def create_Account():
                 flag=1
 
         if flag==1 and email != '' and password != '' and mob != '' and country != '':
-            print(mob)
+            #print(mob)
             db_data=usersdb(user_id=usersdb().user_id,email=email,mobno=mob,password=password,country=country,role_id=2)
             db.session.add(db_data)
             db.session.commit()
